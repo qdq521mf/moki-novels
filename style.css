@@ -1,0 +1,141 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #f8f6f3;
+    color: #333;
+    line-height: 1.8;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.category {
+    margin-bottom: 50px;
+}
+
+.category h2 {
+    color: #667eea;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.novel-list {
+    display: grid;
+    gap: 20px;
+}
+
+.novel-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.novel-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.novel-card h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.novel-card h3 a:hover {
+    color: #667eea;
+}
+
+.meta {
+    color: #999;
+    font-size: 0.9rem;
+    margin: 8px 0;
+}
+
+.summary {
+    color: #666;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #666;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.novel-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.novel-content h1 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.chapter-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.chapter-nav a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.chapter-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .novel-content {
+        padding: 25px;
+    }
+}
